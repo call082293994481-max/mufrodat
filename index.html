@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto Modern</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <p class="eyebrow">KOLEKSI FOTO</p>
+  <h1>MUFRODAT</h1>
+  <p>Kumpulan mufrodat dari kitab DURUSULUGHOH JILID 1.</p>
+</header>
+
+<nav class="filters">
+  <button class="active" data-filter="all">Semua</button>
+  <button data-filter="alam">Alam</button>
+  <button data-filter="perjalanan">Perjalanan</button>
+  <button data-filter="kegiatan">Kegiatan</button>
+</nav>
+
+<main class="gallery">
+  <article class="photo" data-category="alam">
+    <img src="images/foto1.jpg" alt="Pemandangan">
+    <div class="caption"><h2>Pemandangan</h2><p>Keindahan alam</p></div>
+  </article>
+  <article class="photo" data-category="perjalanan">
+    <img src="images/foto2.jpg" alt="Perjalanan">
+    <div class="caption"><h2>Perjalanan</h2><p>Momen perjalanan</p></div>
+  </article>
+  <article class="photo" data-category="alam">
+    <img src="images/foto3.jpg" alt="Alam">
+    <div class="caption"><h2>Alam</h2><p>Suasana yang menenangkan</p></div>
+  </article>
+  <article class="photo" data-category="kegiatan">
+    <img src="images/foto4.jpg" alt="Kegiatan">
+    <div class="caption"><h2>Kegiatan</h2><p>Dokumentasi kegiatan</p></div>
+  </article>
+</main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button id="close" aria-label="Tutup">&times;</button>
+  <img id="lightboxImg" alt="">
+</div>
+
+<footer>© 2026 Galeri Foto</footer>
+<script src="script.js"></script>
+</body>
+</html>
